@@ -1,0 +1,12 @@
+<button [class]="'btn' + btnClass" onclick="my_modal_5.showModal()">{{btnText}}</button>
+<dialog id="my_modal_5" [class]="'modal modal-bottom sm:modal-middle'+ class">
+    <div class="modal-box">
+        <ng-content></ng-content>
+        <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+        </div>
+    </div>
+</dialog>
