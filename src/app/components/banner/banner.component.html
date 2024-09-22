@@ -1,0 +1,60 @@
+<div class="grid md:grid-cols-2 grid-cols-1 min-h-screen font-poppins py-10
+bg-[url('/wave.svg')]
+    bg-no-repeat
+    bg-fixed
+    gap-5
+    px-5
+">
+    <div class="
+    grid
+    sm:grid-cols-5
+    gap-3
+    ">
+
+        <div *ngFor="let card of cards" [class]="card.class">
+            <app-hero-card [description]="card.description" [image]="card.image" [title]="card.title"></app-hero-card>
+        </div>
+
+    </div>
+    <div class="max-md:order-first">
+        <div class="flex items-center flex-col justify-center max-w-xl mx-auto sticky top-[50%]
+        max-sm:py-10
+    space-y-7  ">
+
+            <h1 class="lg:text-7xl
+            md:text-6xl
+            text-5xl
+            font-bold 
+    bg-gradient-to-t
+    from-black
+    to-gray-400
+    inline-block
+    text-transparent
+    bg-clip-text
+    ">
+                <app-animated-text></app-animated-text>
+            </h1>
+            <h4 class="opacity-70">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laudantium!
+            </h4>
+            <button class="btn
+btn-block
+btn-circle
+bg-gradient-to-r
+from-gray-900
+via-gray-700
+to-gray-500
+text-white
+hover:to-gray-900
+hover:from-gray-500
+
+transition-all
+
+outline-double
+outline-offset-2
+">
+                JOIN NOW
+            </button>
+        </div>
+    </div>
+</div>
