@@ -1,6 +1,5 @@
-<div class="min-h-screen">
-  <app-banner></app-banner>
-</div>
-<div class="min-h-screen flex justify-center items-center">
-  <app-auth-modal></app-auth-modal>
-</div>
+<nav class="bg-secondary py-3 flex justify-center items-center gap-5 text-neutral fixed top-0 left-0 w-screen z-10">
+  <a routerLink="" routerLinkActive="router-link-active">Home</a>
+  <a routerLink="/battle" routerLinkActive="router-link-active">Battle</a>
+</nav>
+<router-outlet></router-outlet>

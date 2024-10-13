@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        "scroll-up": "scroll-up 10s linear infinite",
+      },
     },
   },
   plugins: [require("daisyui")],

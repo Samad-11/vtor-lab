@@ -1,0 +1,35 @@
+<div class="sticky top-20">
+    <h2 class="text-5xl text-center text-white underline font-semibold pb-8">WINNERS</h2>
+    <div class="slider
+    bg-[#D9D9D9]
+    rounded-2xl pt-2
+
+    ">
+        <div class="slide-track">
+            <div class="slide px-2
+            " *ngFor="let winner of winners">
+                <div class="w-full h-[90%] bg-green-400
+                rounded-xl
+                p-3
+                text-xl
+                ">
+                    <div>
+                        <h5 class="text-center">{{winner.name}}</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-center text-lg opacity-70">Arcade Arena</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" *ngFor="let winner of winners">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>

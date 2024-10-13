@@ -1,0 +1,24 @@
+<main class="min-h-screen -z-20">
+    <div class="fixed h-screen w-screen bg-black/55
+            bg-no-repeat
+            bg-center
+            bg-cover
+            -z-10
+            " style="background-image: url('bg/bg-battle.png');">
+        <div class="bg-black/55 w-full h-full ">
+
+        </div>
+    </div>
+
+    <div class="z-20 pt-20 max-w-screen-xl mx-auto">
+        <app-battle-carousel></app-battle-carousel>
+        <div class=" grid grid-cols-5 pt-10">
+            <div class="col-span-3">
+                <app-upcoming-battles></app-upcoming-battles>
+            </div>
+            <div class="col-span-1 col-start-5">
+                <app-winners></app-winners>
+            </div>
+        </div>
+    </div>
+</main>
